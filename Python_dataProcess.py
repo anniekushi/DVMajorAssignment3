@@ -115,7 +115,7 @@ print(grap)
 coAuthors_data_file = {'nodes': [{'id': node, **grap.nodes[node]} for node in grap.nodes()],'links': [{'source': source, 'target': target} for source, target in grap.edges()]}
 #coauthorship_data = {'nodes': [{'id': node, **G.nodes[node]} for node in G.nodes()],'edges': edges}
 with open('coAuthors.json', 'w', encoding='utf-8') as outfile:
-    json.dump(coAuthors_data_file, outfile, ensure_ascii=False)
+    json.dump(coAuthors, outfile, ensure_ascii=False)
 
 
 # In[ ]:
